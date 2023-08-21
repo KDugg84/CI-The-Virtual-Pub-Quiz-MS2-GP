@@ -16,6 +16,54 @@ html {
 
 body {
     font-family: Lato, 'san-serif';
-    color: #777777;
 }
+
+/* Header styles for all pages */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: seagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Logo styles for all pages */
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none; 
+    font-weight: 700;
+    letter-spacing: 2px;
+    filter: drop-shadow(0 0 5px black);
+}
+
+/* Navbar styles for all pages */
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    letter-spacing: 4px;
+    transition: .3s;
+    filter: drop-shadow(0 0 5px black);
+}
+
+.navbar a:hover  {
+    color: saddlebrown;
+}
+
+.active {
+    border-bottom: 1px solid;
+}
+
+
 
