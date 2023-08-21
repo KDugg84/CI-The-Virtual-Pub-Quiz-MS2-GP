@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@600&display=swap');
+
+/* Default styles for all pages */
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato, 'san-serif';
+    color: #777777;
+}
+
