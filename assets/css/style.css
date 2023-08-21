@@ -65,19 +65,10 @@ body {
     border-bottom: 1px solid;
 }
 
-/* Hero Image styles*/
+/* Background image styles*/
 
-#hero-image-container {
-    height: 600px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-#hero-image-background {
-    height: 600px;
-    width: 100%;
-    position: relative;
+.pub-background {
+    min-height: 100vh;
     background-image: url("../img/pub-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
