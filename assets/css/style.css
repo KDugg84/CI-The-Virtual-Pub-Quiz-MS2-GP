@@ -83,3 +83,29 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+/* Footer styles for all pages */ 
+
+footer {
+    height: 200px;
+    background-color: seagreen;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #fff;
+}
+
+.social-networks i:hover {
+    color: saddlebrown;
+}
