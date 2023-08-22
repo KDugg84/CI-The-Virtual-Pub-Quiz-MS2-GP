@@ -37,7 +37,7 @@ body {
 
 .logo {
     font-size: 32px;
-    color: #fff;
+    color: white;
     text-decoration: none; 
     font-weight: 700;
     letter-spacing: 2px;
@@ -48,7 +48,7 @@ body {
 
 .navbar a {
     font-size: 18px;
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -90,41 +90,111 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #fff;
+    color: white;
 }
 
 .welcome-content h1  {
-    font-size: 78px;
+    font-size: 60px;
     font-weight: 700;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(0 0 5px black);
 }
 
 .welcome-content p {
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(0 0 5px black);
     margin-bottom: 30px;
 }
 
-.welcome-content .start-btn {
+.welcome-content .start-button {
     width: 190px;
     height: 55px;
     background-color: seagreen;
-    border: 2px solid #fff;
+    border: 2px solid white;
     outline: none;
     border-radius: 6px;
     box-shadow: 0 0 10px seagreen;
     font-size: 18px;
-    color: #fff;
+    color: white;
     letter-spacing: 1px;
     font-weight: 600;
     cursor: pointer;
     transition: .5s;
 }
 
-.welcome-content .start-btn:hover {
+.welcome-content .start-button:hover {
     background: black;
     box-shadow: none;
+}
+
+/* Popup/rules screen styles*/ 
+
+.popup-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background-color: seagreen;
+    border-radius: 6px;
+    padding: 10px 25px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.popup-screen h2 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.info li {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    margin: 4px 0px;
+}
+
+.popup-screen .button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 15px 0 7px 0;
+}
+
+.popup-screen .button-group .info-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 45px;
+    background-color: white;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.popup-screen .button-group .info-button:nth-child(1) {
+    background: transparent;
+    color: white;
+}
+
+.popup-screen .button-group .info-button:nth-child(1):hover {
+    background: saddlebrown;
+    color: white;
+}
+
+.popup-screen .button-group .info-button:nth-child(2):hover {
+    background: saddlebrown;
+    color: white;
 }
 
 /* Footer styles for all pages */ 
