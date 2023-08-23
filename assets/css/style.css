@@ -100,7 +100,7 @@ body {
     color: white;
 }
 
-.welcome-content h1  {
+.welcome-content h1 {
     font-size: 60px;
     font-weight: 700;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -113,9 +113,26 @@ body {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     filter: drop-shadow(0 0 5px black);
     margin-bottom: 30px;
+    font-weight: 600;
 }
 
-.welcome-content .start-button {
+.start-button-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-button-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.start-button-content .start-button {
     width: 190px;
     height: 55px;
     background-color: seagreen;
@@ -131,7 +148,7 @@ body {
     transition: .5s;
 }
 
-.welcome-content .start-button:hover {
+.start-button-content .start-button:hover {
     background: black;
     box-shadow: none;
 }
