@@ -8,9 +8,9 @@ const exitButton = document.querySelector('.exit-button');
 
 const main = document.querySelector('.background');
 
-const continueButton = document.querySelector('.continue-button')
+const continueButton = document.querySelector('.continue-button');
 
-const quizSection = document.querySelector('.quiz-section')
+const quizSection = document.querySelector('.quiz-section');
 
 // Onclick event (arrow function (shorthand notation for defining functions))
 // which adds the live class to the popup-screen css selector.
@@ -32,7 +32,7 @@ exitButton.onclick = () => {
 
 // Onclick event which adds the live class to the popup-screen css selector.
 continueButton.onclick = () => {
-    popupScreen.classList.add('live');
+    quizSection.classList.add('live');
     popupScreen.classList.remove('live');
     main.classList.remove('live');
 }
