@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@600&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@600&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 /* Default styles for all pages */
 
@@ -16,6 +17,7 @@ html {
 
 body {
     font-family: Lato, 'san-serif';
+    overflow: hidden;
 }
 
 /* Header styles for all pages */
@@ -66,6 +68,7 @@ body {
 }
 
 /* Background image styles*/
+/* 100vh = 1000px*/
 
 .background {
     min-height: 100vh;
@@ -83,6 +86,7 @@ body {
 }
 
 /* Welcome screen styles*/
+/* 100vh = 1000px*/
 
 .welcome-container {
     height: 100vh;
@@ -116,8 +120,134 @@ body {
     font-weight: 600;
 }
 
-.start-button-container {
+/* Quiz container styles */
+
+.quiz-container {
+    display: flex;
     height: 100vh;
+    width: 200%;
+}
+
+.quiz-section {
+    position: relative;
+    /*left: -50%;*/
+    left: 0;
+    width: 100%;
+    background: seagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: .8s ease-in-out;
+    transition-delay: 0.25s;
+    
+}
+
+.quiz-section.live {
+    left: 0;
+}
+
+.quiz-section .quiz-box {
+    position: relative;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 20px 30px;
+    color: white;
+}
+
+.quiz-box h1 {
+    font-size: 32px;
+    text-align: center;
+    background: linear-gradient(45deg, transparent, saddlebrown, transparent);
+    border-radius: 6px;
+    filter: drop-shadow(0 0 5px black);
+}
+
+.quiz-box .quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid white;
+    margin-bottom: 30px;
+}
+
+.quiz-header span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.quiz-header .header-score {
+    background: saddlebrown;
+    filter: drop-shadow(0 0 5px black);
+    border-radius: 3px;
+    padding: 7px;
+}
+
+.quiz-box .quiz-questions {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.answer-list .option {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 17px;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: .3s;
+    filter: drop-shadow(0 0 5px black);
+}
+
+.answer-list .option:hover {
+    background: saddlebrown;
+    border-color: saddlebrown;
+}
+
+.quiz-box .quiz-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid white;
+    padding-top: 20px;
+    margin-top: 25px;
+}
+
+.quiz-footer .question-total {
+    font-size: 16px;
+    font-weight: 600;
+    filter: drop-shadow(0 0 5px black);
+}
+
+.quiz-footer .next-button {
+    width: 100px;
+    height: 45px;
+    border-radius: 6px;
+    outline: none;
+    filter: drop-shadow(0 0 5px black);
+    font-size: 16px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.quiz-footer .next-button:hover {
+    background: red;
+    border-color: red;
+
+}
+
+/* Start button container styles */
+
+.start-button-container {
+    position: relative;
+    left: -50%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -230,7 +360,7 @@ body {
 
 /* Footer styles for all pages */ 
 
-footer {
+/*footer {
     height: 200px;
     background-color: seagreen;
 }
@@ -252,4 +382,4 @@ footer {
 
 .social-networks i:hover {
     color: saddlebrown;
-}
+}*/
