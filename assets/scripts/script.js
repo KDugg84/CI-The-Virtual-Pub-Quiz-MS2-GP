@@ -89,6 +89,9 @@ function showQuestions(index) {
     }
 }
 
+// Uncaught ReferenceError: optionSelected is not defined
+// at HTMLDivElement.onclick (quiz.html:1:1)
+
 function optionSelected(answer) {
     let userAnswer = answer.textContent;
     let correctAnswer = questions[questionCount].answer;
