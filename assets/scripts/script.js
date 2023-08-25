@@ -46,18 +46,62 @@ continueButton.onclick = () => {
     quizBox.classList.add('live');
 
     showQuestions(0);
+
+    questionCounter(1);
 }
 
 let questionCount = 0;
 
+let questionNumber = 1;
+
 nextButton.onclick = () => {
-    questionCount++;
-    showQuestions(questionCount);
+    if (questionCount < questions.length - 1) {
+        questionCount++;
+        showQuestions(questionCount);
+
+        questionNumber++;
+
+        questionCounter(questionNumber);
+    } 
+    else {
+        console.log('Questions Completed');
+    }
 }
+
+const answerList = document.querySelector('.answer-list');
 
 // Getting questions and options from the array 
 
 function showQuestions(index) {
     const questionText = document.querySelector('.quiz-questions');
     questionText.textContent = `${questions[index].number}. ${questions[index].question}`;
+
+    let answerTag = `<div class="option"><span>${questions[index].options[0]}</span></div>
+    <div class="option"><span>${questions[index].options[1]}</span></div>
+    <div class="option"><span>${questions[index].options[2]}</span></div>
+    <div class="option"><span>${questions[index].options[3]}</span></div>`;
+
+    answerList.innerHTML = answerTag;
+
+    const answerOptions = document.querySelectorAll('.option');
+    for (let i = 0; i < answerOptions.length; i++) {
+        answerOptions[i].setAttribute('onclick', 'optionSelected(this)');
+    }
+}
+
+function optionSelected(answer) {
+    let userAnswer = answer.textContent;
+    let correctAnswer = questions[questionCount].answer;
+
+    if (userAnswer == correctAnswer) {
+        answer.classList.add('correct');
+    }
+    else {
+        answer.classList.add('incorrect');
+    }
+} 
+
+function questionCounter(index) {
+    const questionTotal = document.querySelector('.question-total');
+    questionTotal.textContent = `${index} of ${questions.length} Questions`;
 }
