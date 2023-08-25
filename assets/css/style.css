@@ -222,7 +222,17 @@ body {
     border-color: saddlebrown;
 }
 
-.quiz-box .quiz-footer {
+.answer-list .option.correct {
+    border-color: white;
+}
+
+.answer-list .option.incorrect {
+    background: red;
+    color: white;
+    border-color: red;
+}
+
+.quiz-box .quiz-box-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -231,13 +241,13 @@ body {
     margin-top: 25px;
 }
 
-.quiz-footer .question-total {
+.quiz-box-footer .question-total {
     font-size: 16px;
     font-weight: 600;
     filter: drop-shadow(0 0 5px black);
 }
 
-.quiz-footer .next-button {
+.quiz-box-footer .next-button {
     width: 100px;
     height: 45px;
     border-radius: 6px;
@@ -250,7 +260,7 @@ body {
     transition: .5s;
 }
 
-.quiz-footer .next-button:hover {
+.quiz-box-footer .next-button:hover {
     background: red;
     border-color: red;
 }
