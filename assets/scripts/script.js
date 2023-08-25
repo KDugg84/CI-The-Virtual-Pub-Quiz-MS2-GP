@@ -1,4 +1,6 @@
-import questions from "./quiz-questions";
+// Import variable array "questions" from quiz-questions.js
+
+import questions from "./quiz-questions.js";
 
 // Global variables which remain constant.
 
