@@ -16,6 +16,8 @@ const quizSection = document.querySelector('.quiz-section');
 
 const quizBox = document.querySelector('.quiz-box');
 
+const nextButton = document.querySelector('.next-button');
+
 // Onclick event (arrow function (shorthand notation for defining functions))
 // which adds the live class to the popup-screen css selector.
 startButton.onclick = () => {
@@ -45,8 +47,6 @@ continueButton.onclick = () => {
 }
 
 let questionCount = 0;
-
-const nextButton = document.querySelector('.next-button');
 
 nextButton.onclick = () => {
     questionCount++;
