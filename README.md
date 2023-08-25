@@ -1,16 +1,14 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-# PROJECT NAME TO GO HERE
+# The Virtual Pub Quiz
 
-👩🏻‍💻 View an example of this section [here](https://github.com/kera-cudmore/Bully-Book-Club#bully-book-club-website)
+The Virtual Pub Quiz is an online interactive quiz game designed to test the user's general knowledge of varying subjects that you would normally find at a real in-person pub quiz.
 
-Add a Blurb about the site here, what does it do, why did you build it?
+The purpose of this project is to demonstrate a practical understading of how interactive front end development works in terms of DOM manipulation and to demonstate how the trinity of web dev languages can interact with each other to create in this case a fun application for a lover of quiz apps.
 
-Add an image of the finished site here. I like to use [amiresponsive](https://ui.dev/amiresponsive) to get an image of my site on all device sizes, and amiresponsive allows you to click links on the page and scroll, so each device can show a different element of your site.
+Add an image of the finished site here [amiresponsive](https://ui.dev/amiresponsive) to get an image of my site on all device sizes. 
 
-Add a link to the live site here, for Milestone 1 this will be the GitHub Pages Link from when you deployed the site.
-
-If you want to add optional [shields.io](https://shields.io) badges to your README, I like to add them to this section.
+Add a link to the live site here
 
 ---
 
@@ -48,15 +46,44 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
   * [Media](#media)
   * [Acknowledgments](#acknowledgments)
 
----
-
 ## User Experience (UX)
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/Bully-Book-Club#user-experience-ux)
+The best (intuitive) UX creates single-use learning.
 
 ### User Stories
 
-Add your user stories here. You want to include first time visitors and returning visitors here as a minimum. Think about each group, and the experience and journey you want them to have on your site. It really helps to think about this before you start coding, and will really help with creating your wireframes.
+* Website Owner's Goals:
+
+  * I want new and returning players to use the quiz game.
+
+  * I want users to be able to understand how to navigate the website.
+
+  * I want the quiz game to be fun and educational.
+
+  * I want the webpage/quiz game to function as it should.
+
+  * I want users to return to the quiz game.
+
+* First Time Visitor Goals: 
+
+  * I want to be able to understand how the game works.
+
+  * I want to be able to start playing the game quickly in as few steps as possible.
+
+  * I want to be able to abort the game if need's be and return to the start menu.
+
+  * I want to get my final score at the very end of the quiz. 
+
+* Returning Visitor Goals:
+
+  * I want to be able to start playing the game quickly in as few steps as possible.
+
+  * I would like a choice of subjects and to be able to pick a subject of my choosing.
+
+  * I want the gaming experience to be consistent with every use.
+
+  * I would like an option to get random questions from random subjects. 
+   
 
 ## Design
 
