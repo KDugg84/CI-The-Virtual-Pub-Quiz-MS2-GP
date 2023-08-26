@@ -20,6 +20,12 @@ const quizBox = document.querySelector('.quiz-box');
 
 const nextButton = document.querySelector('.next-button');
 
+const resultsBox = document.querySelector('.results-box');
+
+const tryAgainButton= document.querySelector('.try-again-button');
+
+const returnHomeButton= document.querySelector('.return-home-button');
+
 // Onclick event (arrow function (shorthand notation for defining functions))
 // which adds the live class to the popup-screen css selector.
 startButton.onclick = () => {
@@ -52,6 +58,32 @@ continueButton.onclick = () => {
     headerScore();
 }
 
+tryAgainButton.onclick = () => {
+    quizBox.classList.add('live');
+    nextButton.classList.remove('live');
+    resultsBox.classList.remove('live');
+
+    questionCount = 0;
+    questionNumber = 1;
+    totalScore = 0;
+    showQuestions(questionCount);
+    questionCounter(questionNumber);
+
+    headerScore();
+}
+
+returnHomeButton.onclick = () => {
+    quizSection.classList.remove('live');
+    nextButton.classList.remove('live');
+    resultsBox.classList.remove('live');
+
+    questionCount = 0;
+    questionNumber = 1;
+    totalScore = 0;
+    showQuestions(questionCount);
+    questionCounter(questionNumber);
+}
+
 let questionCount = 0;
 
 let questionNumber = 1;
@@ -70,7 +102,7 @@ nextButton.onclick = () => {
         nextButton.classList.remove('live');
     } 
     else {
-        console.log('Questions Completed');
+        displayResultsBox();
     }
 }
 
@@ -108,7 +140,8 @@ function optionSelected(answer) {
     else {
         answer.classList.add('incorrect');
 
-        // If answer is incorrect, auto selection of correct answer
+        // If the answer is incorrect, auto select the correct answer
+
         for (let i = 0; i < totalAnswers; i++) {
             if (answerList.children[i].textContent == correctAnswer) {
                 answerList.children[i].setAttribute('class', 'option correct');
@@ -116,13 +149,13 @@ function optionSelected(answer) {
         }
     }
 
-    // If user has selected one answer then disable all other options
-    for (let i = 0; i < totalScore; i++) {
-        answerList.children[i].classList.add('disable-answer');
+    // If user has selected an answer, disable all other options
+
+    for (let i = 0; i < totalAnswers; i++) {
+        answerList.children[i].classList.add('.disable-answer');
     }
 
     nextButton.classList.add('live');
-    
 } 
 
 function questionCounter(index) {
@@ -133,4 +166,12 @@ function questionCounter(index) {
 function headerScore() {
     const headerScoreText = document.querySelector('.header-score');
     headerScoreText.textContent = `Score: ${totalScore} / ${questions.length}`;
+}
+
+function displayResultsBox() {
+    quizBox.classList.remove('live');
+    resultsBox.classList.add('live');
+
+    const scoreText = document.querySelector('.score-text');
+    scoreText.textContent = `Your Score ${totalScore} out of ${questions.length}`;
 }
