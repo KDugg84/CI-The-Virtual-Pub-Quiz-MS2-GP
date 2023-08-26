@@ -1,61 +1,113 @@
-// Test questions for functionality
-
 let questions = [
     {
         number: 1,
-        question: "What does HTML stand for?",
-        answer: "C. Hyper Text Markup Language",
+        question: "What was the fastest growing web browser in 2020?",
+        answer: "A. Microsoft Edge",
         options: [
-            "A. Hyper Type Multi Language",
-            "B. Hyper Text Multiple Language",
-            "C. Hyper Text Markup Language",
-            "D. Home Text Multi Language",
+            "A. Microsoft Edge",
+            "B. Firefox",
+            "C. DuckDuckGo",
+            "D. Internet Explorer",
 
         ]
     },
     {
         number: 2,
-        question: "What does CSS stand for?",
-        answer: "A. Cascading Style Sheet",
+        question: "Which University offered the first-ever academic programme in Computer Science?",
+        answer: "D. Cambridge University",
         options: [
-            "A. Cascading Style Sheet",
-            "B. Cute Style Sheet",
-            "C. Computer Style Sheet",
-            "D. Coding Style Sheet",
+            "A. Harvard University",
+            "B. MIT",
+            "C. University of Glasgow",
+            "D. Cambridge University",
         ]
     },
     {
         number: 3,
-        question: "What does PHP stand for?",
-        answer: "A. Hypertext Preprocessor",
+        question: "How much did Steve Jobs first computer go for at auction?",
+        answer: "B. $500,000",
         options: [
-            "A. Hypertext Preprocessor",
-            "B. Hypertext Programming",
-            "C. Hypertext Preprogramming",
-            "D. Programming Hypertext Preprocessor"
+            "A. $1.2 million",
+            "B. $500,000",
+            "C. $223,000",
+            "D. $3.4 million"
         ]
     },
     {
         number: 4,
-        question: "What does SQL stand for?",
-        answer: "D. Structured Query Language",
+        question: "Which model of computer is the best selling of all time?",
+        answer: "C. Commodore 64",
         options: [
-            "A. Strength Query Language",
-            "B. Stylesheet Query Language",
-            "C. Science Query Language",
-            "D. Structured Query Language"
+            "A. Apple II",
+            "B. IBM PC (5150)",
+            "C. Commodore 64",
+            "D. Sinclair ZX Spectrum"
         ]
     },
     {
         number: 5,
-        question: "What does XML stand for?",
-        answer: "D. Extensible Markup Language",
+        question: "Which company developed the first mobile phone?",
+        answer: "A. Motorola",
         options: [
-            "A. Excellent Multiple Language",
-            "B. Explore Multiple Language",
-            "C. Extra Markup Language",
-            "D. Extensible Markup Language",
-
+            "A. Motorola",
+            "B. Nokia",
+            "C. Samsung",
+            "D. Apple",
+        ]
+    },
+    {   
+        number: 6,
+        question: "What year was the oldest programming language still in use invented?",
+        answer: "A. 1957",
+        options: [
+            "A. 1957",
+            "B. 1952",
+            "C. 1960",
+            "D. 1974",
+        ]
+    },
+    {   
+        number: 7,
+        question: "What was the name of the first operating system?",
+        answer: "D. GM-NAA I/O",
+        options: [
+            "A. Windows 1.01",
+            "B. TSS/360",
+            "C. EPOC",
+            "D. GM-NAA I/O",
+        ]
+    },
+    {   
+        number: 8,
+        question: "What is the brand Sonos famous for making?",
+        answer: "D. Speakers",
+        options: [
+            "A. Games consoles",
+            "B. TV remotes",
+            "C. Screens",
+            "D. Speakers",
+        ]
+    },
+    {   
+        number: 9,
+        question: "Where was the world wide web invented?",
+        answer: "B. Switzerland",
+        options: [
+            "A. United States",
+            "B. Switzerland",
+            "C. Germany",
+            "D. United Kingdom",
+        ]
+    },
+    {   
+        number: 10,
+        question: "Which institution is credited with creating the first website??",
+        answer: "C. CERN",
+        options: [
+            "A. United Nations",
+            "B. NASA",
+            "C. CERN",
+            "D. NATO",
         ]
     }
 ];
