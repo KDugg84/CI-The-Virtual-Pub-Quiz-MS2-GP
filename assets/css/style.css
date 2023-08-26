@@ -131,7 +131,6 @@ body {
 .quiz-section {
     position: relative;
     left: -50%;
-    /* left: 0; */
     width: 100%;
     background: seagreen;
     display: flex;
@@ -160,6 +159,8 @@ body {
     opacity: 0;
     pointer-events: none;
     transform: scale(0.9);
+    transition: 3s ease;
+    transition-delay: 0s;
 }
 
 .quiz-section .quiz-box.live {
@@ -388,6 +389,63 @@ body {
 
 .popup-screen .button-group .info-button:nth-child(2):hover {
     background: saddlebrown;
+    color: white;
+}
+
+.quiz-section .results-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    max-width: 500px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s ease;
+}
+
+.quiz-section .results-box.live {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.results-box h2 {
+    font-size: 50px;
+}
+
+.results-box .buttons {
+    display: flex;
+}
+
+.buttons button {
+    width: 130px;
+    height: 50px;
+    background: red;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    margin: 20px 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.buttons button:nth-child(2) {
+    background: transparent;
+}
+
+.buttons button:nth-child(2):hover {
+    background: red;
     color: white;
 }
 
