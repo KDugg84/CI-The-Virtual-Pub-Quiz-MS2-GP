@@ -232,6 +232,10 @@ body {
     border-color: red;
 }
 
+.answer-list .option.disable-answer {
+    pointer-events: none;
+}
+
 .quiz-box .quiz-box-footer {
     display: flex;
     justify-content: space-between;
@@ -256,13 +260,20 @@ body {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    /*pointer-events: none;*/
+    pointer-events: none;
     transition: .5s;
 }
 
-.quiz-box-footer .next-button:hover {
+.quiz-box-footer .next-button.live:hover {
     background: red;
     border-color: red;
+}
+
+.quiz-box-footer .next-button.live {
+    pointer-events: auto;
+    background: black;
+    border-color: white;
+    color: white;
 }
 
 /* Start button container styles */
