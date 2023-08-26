@@ -48,11 +48,15 @@ continueButton.onclick = () => {
     showQuestions(0);
 
     questionCounter(1);
+
+    headerScore();
 }
 
 let questionCount = 0;
 
 let questionNumber = 1;
+
+let totalScore = 0;
 
 nextButton.onclick = () => {
     if (questionCount < questions.length - 1) {
@@ -62,6 +66,8 @@ nextButton.onclick = () => {
         questionNumber++;
 
         questionCounter(questionNumber);
+
+        nextButton.classList.remove('live');
     } 
     else {
         console.log('Questions Completed');
@@ -92,16 +98,39 @@ function showQuestions(index) {
 function optionSelected(answer) {
     let userAnswer = answer.textContent;
     let correctAnswer = questions[questionCount].answer;
+    let totalAnswers = answerList.children.length;
 
     if (userAnswer == correctAnswer) {
         answer.classList.add('correct');
+        totalScore += 1;
+        headerScore();
     }
     else {
         answer.classList.add('incorrect');
+
+        // If answer is incorrect, auto selection of correct answer
+        for (let i = 0; i < totalAnswers; i++) {
+            if (answerList.children[i].textContent == correctAnswer) {
+                answerList.children[i].setAttribute('class', 'option correct');
+            }
+        }
     }
+
+    // If user has selected one answer then disable all other options
+    for (let i = 0; i < totalScore; i++) {
+        answerList.children[i].classList.add('disable-answer');
+    }
+
+    nextButton.classList.add('live');
+    
 } 
 
 function questionCounter(index) {
     const questionTotal = document.querySelector('.question-total');
     questionTotal.textContent = `${index} of ${questions.length} Questions`;
+}
+
+function headerScore() {
+    const headerScoreText = document.querySelector('.header-score');
+    headerScoreText.textContent = `Score: ${totalScore} / ${questions.length}`;
 }
