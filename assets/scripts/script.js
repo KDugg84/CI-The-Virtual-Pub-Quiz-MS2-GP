@@ -85,12 +85,9 @@ function showQuestions(index) {
 
     const answerOptions = document.querySelectorAll('.option');
     for (let i = 0; i < answerOptions.length; i++) {
-        answerOptions[i].setAttribute('onclick', 'optionSelected(this)');
-    }
+        answerOptions[i].addEventListener('click', () => optionSelected(answerOptions[i]));
+    }                                     
 }
-
-// Uncaught ReferenceError: optionSelected is not defined
-// at HTMLDivElement.onclick (quiz.html:1:1)
 
 function optionSelected(answer) {
     let userAnswer = answer.textContent;
