@@ -4,7 +4,7 @@
 
 The Virtual Pub Quiz is an online interactive quiz game designed to test the user's general knowledge of varying subjects that you would normally find at a real in-person pub quiz.
 
-The purpose of this project is to demonstrate a practical understading of how interactive front end development works in terms of DOM manipulation and to demonstate how the trinity of web dev languages can interact with each other to create in this case a fun application for a lover of quiz apps.
+The purpose of this project is to demonstrate a practical understading of how interactive front end development works in terms of DOM manipulation and to demonstate how the trinity of web development languages can interact with each other to create in this case a fun application for a lover of quiz apps.
 
 Add an image of the finished site here [amiresponsive](https://ui.dev/amiresponsive) to get an image of my site on all device sizes. 
 
@@ -70,7 +70,7 @@ The best (intuitive) UX creates single-use learning.
 
   * I want to be able to start playing the game quickly in as few steps as possible.
 
-  * I want to be able to abort the game if need's be and return to the start menu.
+  * I want to be able to exit the game if need's be and return to the start menu.
 
   * I want to get my final score at the very end of the quiz. 
 
@@ -84,84 +84,127 @@ The best (intuitive) UX creates single-use learning.
 
   * I would like an option to get random questions from random subjects. 
    
-
 ## Design
-
-👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
 
 ### Colour Scheme
 
-Add all information about your colour scheme for your site here. You can explain why you choose the colours you did?
+I wanted the colours used for this project to reflect the interior appearance of a typical British or
+Irish pub. In keeping with the theme of the pub quiz I used the following main colours:
 
-I like to include a palette of the colour scheme here, my favourite site for creating a colour palette is [coolors](https://coolors.co/), but there are lots of other sites that also do the same thing, like [ColorSpace](https://mycolor.space/?hex=%23F5F5F5&sub=1), [Muzli Colors](https://colors.muz.li/), [Adobe Colour Wheel](https://color.adobe.com/create/color-wheel) and [Canva](https://www.canva.com/colors/color-palette-generator/) to name a few.
+* Seagreen: rgb(46, 139, 87)
+* Saddlebrown: rgb(139, 69, 19)
+
+The secondary colours used primarily in the quiz section are:
+
+* Red: rgb(255, 0, 0)
+* White: rgb(255, 255, 255)
+* Black: rgb(0, 0, 0)
+
+The secondary colours used alongside the green siding background of the quiz section help to generate a sense of playing a pub game. One very common game found in pubs is snooker or pool so the use of these three colours help reinforce this aspect of the quiz game.
 
 ### Typography
 
-If you've imported fonts to use in your project, add some information about them here. You can include information like:
-
-Why did you choose the font you have?
-Is this an accessibly friendly font?
-What weights have you included?
-
-I also like to include an image of the fonts chosen as a reference.
-
-[Google Fonts](https://fonts.google.com/) is a popular choice for importing fonts to use in your project, as it doesn't require you to download the fonts to use them.
+Google Fonts was used to import an external font style which was used as the main project font for the logo, the body
+text and the questions and answers text. The Lato font was chosen to be the main font used throughout the project
+as it is often regarded as a excellent choice for website. The text is clear and very readable compared to other 
+font styles. The backup font style is sans-serif which is included in the CSS family-font selector in case the Lato font fails the load.
 
 ### Imagery
 
-Use this section to explain what sort of imagery you plan to use through your site.
+Imagery is important. The large, background/ hero image is designed to be striking and catch the user's attention and to help reinforce the nature of the application.
+
+The background/hero image was downloaded from [Pexels](https://www.pexels.com), a simple search using the keyword "pub" 
+and its the first hit on the first page, the image license is free to use (CC0). 
 
 ### Wireframes
 
-Add the images or links for your wireframes here.
+The wireframes were created using Balsamiq desktop for Windows 10:
 
-There are lots of different options to create your wireframes - Code Institute students can access [Balsamiq](https://balsamiq.com/) as part of the course.
+* [Home Page](assets/img/Home%20Page.png)
 
-Some other options include [Figma](https://www.figma.com/), [AdobeXD](https://www.adobe.com/products/xd.html), [Sketch](https://www.sketch.com/?utm_source=google&utm_medium=cpc&adgroup=uxui&device=c&matchtype=e&utm_campaign=ADDICTMOBILE_SKETCH_GAD_DG_UK_T1_ALWAYS-ON_S_TRF_PROS_BRAND&utm_term=sketch&utm_source=google&utm_medium=cpc&utm_content=TOF_BRND__generic&hsa_acc=8710913982&hsa_cam=16831089317&hsa_grp=134620695759&hsa_ad=592060065319&hsa_src=g&hsa_tgt=kwd-14921750&hsa_kw=sketch&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwr4eYBhDrARIsANPywCjRIFn93DMezYnsyE5Fic_8l8kynJtut0GYMU01TiohHjwziFtlH0gaAhteEALw_wcB) and [Mockup](https://apps.apple.com/us/app/mockup-sketch-ui-ux/id1527554407) to name just a few! Or you can even go old school and get those wireframes completed using pen and paper. Just snap an image of the completed wireframes to add the images to the README.
+* [Quiz Page](assets/img/Quiz%20Page.png)
 
 ## Features
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/TheQuizArms#Features)
-
-This section can be used to explain what pages your site is made up of.
-
 ### General features on each page
 
-If there is a feature that appears on all pages of your site, include it here. Examples of what to include would the the navigation, a footer and a favicon.
+The Virtual Pub Quiz consists of two pages "Home" and "Quiz".
 
-I then like to add a screenshot of each page of the site here, i use [amiresponsive](https://ui.dev/amiresponsive) which allows me to grab an image of the site as it would be displayed on mobile, tablet and desktop, this helps to show the responsiveness of the site.
+* Features that are common across the site include:
+
+  * A logo which acts as a link back to the home page.
+
+  * A navigation bar which provides linkage to both pages.
+
+  * Both the logo and navigation bar are responsive when viewed on different sized screens. 
+
+  * The pub background/hero image is featured in both pages.
+
+Other features of the Home Page:
+
+* A welcome message which informs the user of what to expect from the quiz and an instruction
+to click on the quiz navigation link to start playing the quiz.
+
+The Quiz Page:
+
+* A start quiz button which when clicked brings up a modal with a list of rules telling the user how 
+to play the game.
+
+* The modal includes two buttons, an exit button which returns the user back to the quiz page and a continue button 
+to start playing the quiz.
+
+* When the user clicks on the continue button the modal displaying the game instructions which disapear to be 
+replaced by a scrolling green screen and another modal displaying the first questions.
+
+* With each question the user has to pick one answer, a right answer will produce a white border around that question
+and a wrong answer choice will highlight that question in red. The user must choose an answer before being able 
+to continue with the quiz.
+
+* Once the user has completed the quiz another modal will appear to present the user with their total score.
+
+* The final score modal inclues to buttons were the user can either press "Try Again?" to retake the quiz 
+and potenially improve their score or press "Go Home?" to return to the main quiz screen.
 
 ### Future Implementations
 
-What features would you like to implement in the future on your site? Would you like to add more pages, or create login functionality? Add these plans here.
+Future implementations could involve:
+
+* Incorporating a trivia quiz API to generate the questions rather than having to manually type them out in an array file.
+
+* The option to select from a list of subjects occording to the user's preferences.
+
+* A randomiser mode where the app will generate the questions from different subjects.
 
 ### Accessibility
 
-Be an amazing developer and get used to thinking about accessibility in all of your projects!
+Whilst coding the site I have ensured that the site is accesible for all. This is achieve by using:
 
-This is the place to make a note of anything you have done with accessibility in mind. Some examples include:
-
-Have you used icons and added aria-labels to enable screen readers to understand these?
-Have you ensured your site meets the minimum contrast requirements?
-Have you chosen fonts that are dyslexia/accessible friendly?
-
-Code Institute have an amazing channel for all things accessibility (a11y-accessibility) I would highly recommend joining this channel as it contains a wealth of information about accessibility and what we can do as developers to be more inclusive.
+* Google Dev Tools to check contrast of items.
+* Alt tags to describe the images on site.
+* Semantic HTML
+* Aria Labels to hightlight areas for users who require the use of screen reade
 
 ## Technologies Used
 
-👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
-
 ### Languages Used
 
-Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
+* HTML5
+* CSS3
+* JavaScript ES6
 
 ### Frameworks, Libraries & Programs Used
 
-Add any frameworks, libraries or programs used while creating your project.
-
-Make sure to include things like git, GitHub, the program used to make your wireframes, any programs used to compress your images, did you use a CSS framework like Bootstrap? If so add it here (add the version used).
-
-A great tip for this section is to include them as you use them, that way you won't forget what you ended up using when you get to the end of your project.
+[Balsamiq](https://balsamiq.com/wireframes/) was used to create the wireframes for the website.
+[Font Awesome](https://fontawesome.com/icons) was used to add the beer glass to the logo and the social media icons used in the footer.
+[Google Fonts](https://fonts.google.com/) was used to import the font for the body text.
+Google Dev Tools was used to identify and resolve problems related to responsiveness and appearance.
+[Github](https://github.com/) was used to store my project in a repository.
+[Git](https://git-scm.com/) was used for version control.
+[Google](https://google.com) was used to research other CSS styles to add more dynamic touches to the
+project and help with JavaScript functionality issues/problems. 
+[Gitpod](https://www.gitpod.io/) the vast majority of my time was spent inside GitPod's VSCode Cloud IDE.
+CDNs [Cloudflare](https://www.cloudflare.com/en-gb/learning/what-is-cloudflare/) and [JsDelivr](https://www.jsdelivr.com/) were used for Font Awesome icons CSS minified and Fork Awesome minified.
+[Am I Responsive](https://ui.dev/amiresponsive) To create the responsive banner of devices.
 
 ## Deployment & Local Development
 
