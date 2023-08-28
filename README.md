@@ -206,52 +206,51 @@ project and help with JavaScript functionality issues/problems.
 CDNs [Cloudflare](https://www.cloudflare.com/en-gb/learning/what-is-cloudflare/) and [JsDelivr](https://www.jsdelivr.com/) were used for Font Awesome icons CSS minified and Fork Awesome minified.
 [Am I Responsive](https://ui.dev/amiresponsive) To create the responsive banner of devices.
 
+## Testing
+
+### Validation
+
 ## Deployment & Local Development
 
-👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
+### Deploying to Github Pages
 
-### Deployment
-
-Include instructions here on how to deploy your project. For your first project you will most likely be using GitHub Pages.
+* Choose the repository you want to deploy from the main overview.
+* Go to settings by clicking on the icon on the menu.
+* In the left navigation, select the "Pages" option.
+* Under "Source", choose "Master" branch and click "Save".
+* After it's done, you will see a message saying "Your site is ready to be published at (insert url here)".
 
 ### Local Development
 
-The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
-
 #### How to Fork
 
-Place instructions on how to fork your project here.
+Forking is the process of creating a copy of the original repository. The process allows a developer to make any changes without affecting the main repo.
+
+To do this: 
+
+* Search for the Github repo you want to copy.
+* Select the "Fork" button located in the top right corner which is located under your profile icon.
+* Once completed, you will now have your own version of that repo to make changes to.
 
 #### How to Clone
 
-Place instructions on how to clone your project here.
+To copy a Github repository:
 
-## Testing
-
-Start as you mean to go on - and get used to writing a TESTING.md file from the very first project!
-
-Testing requirements aren't massive for your first project, however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
-  
-Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
+* First navigate to the repository you wish to copy.
+* Click on the "Code" button (which has a download icon) and copy the link provided. 
+* In the Gitpod terminal, navigate to the directory where you want to place the clone. Then, type "git clone" and paste the link you copied earlier and press enter.
+* Another way to push a cloned repository to a new Gitpod workspace can be done through the use of a Gitpod extension installed in your prefered browser, in my case Google Chrome. This browser extension will add a green Gitpod button to your Github account and will be visible on every repository created, cloned or searched for.
 
 ## Credits
-
-👩🏻‍💻 View an example of a completed Credits section [here](https://github.com/kera-cudmore/BookWorm#Credits)
-
-The Credits section is where you can credit all the people and sources you used throughout your project.
 
 ### Code Used
 
 If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
-
-### Content
-
-Who wrote the content for the website? Was it yourself - or have you made the site for someone and they specified what the site was to say? This is the best place to put this information.
-
-###  Media
-
-If you have used any media on your site (images, audio, video etc) you can credit them here. I like to link back to the source where I found the media, and include where on the site the image is used.
   
 ###  Acknowledgments
 
-If someone helped you out during your project, you can acknowledge them here! For example someone may have taken the time to help you on slack with a problem. Pop a little thank you here with a note of what they helped you with (I like to try and link back to their GitHub or Linked In account too). This is also a great place to thank your mentor and tutor support if you used them.
+* Jubril Akolade (My stand-in mentor for Chris) - for offering guidence and support for the project from it's inception, development and deployment.
+
+* Code Institute student cohort on Slack - always offering help and solutions. 
+
+* Callum Jones - for offering helpful advice and tips.
