@@ -181,8 +181,8 @@ Whilst coding the site I have ensured that the site is accesible for all. This i
 
 * Google Dev Tools to check contrast of items.
 * Alt tags to describe the images on site.
-* Semantic HTML
-* Aria Labels to hightlight areas for users who require the use of screen reade
+* Semantic HTML.
+* Aria Labels to hightlight areas for users who require the use of a screen reader.
 
 ## Technologies Used
 
@@ -209,6 +209,121 @@ CDNs [Cloudflare](https://www.cloudflare.com/en-gb/learning/what-is-cloudflare/)
 ## Testing
 
 ### Validation
+
+The W3C Markup Validation Service was used on all pages as well as the CSS Validator:
+
+* [HTML & CSS Validation Results](assets/img/Home-Quiz%20Page%20HTML%20&%20CSS%20Validation.PNG)
+* [JSLint](https://jslint.com) was used to check for compliance with best coding practices.
+
+The JS Lint validator throw up a few issues with my javaScript code, the two most commonly found were:
+
+* "Use double quotes, not single quotes" when targeting CSS selector class.
+* "Use 'function (...)', not '(...) =>' when arrow functions become too complex."
+
+### Bugs and Errors
+
+### Known Issues and Fixes
+
+One known issue is regarding the quiz page when viewed at smaller screen sizes, at desktop there isn't a problem
+but when the page is reduced in size the navigation bar is pushed out of view to the right. 
+
+One solution I tried was using the overflow: hidden; property in CSS on the body element which only mitigated
+the effect when viewed on desktop screen but I couldn't find a solution to the issue at smaller screen sizes. 
+
+### Testing User Stories
+
+* Website Owner's Goals:
+
+  * I want users to be able to understand how to navigate the website.
+
+    * Upon entering the home page the user is greeted with a welcome message and
+    instruction to click on the quiz link in the navigation bar.
+
+  * I want the quiz game to be fun and educational.
+
+    * The questions presented to the user cover a wide range of subject rather than just
+    sticking to one particular suject matter.
+
+  * I want the webpage/quiz game to function as it should.
+
+    * This falls into the section on manual testing where functionality is tested to make sure 
+    that every aspect of the website works as intended.
+
+  *  I want users to return to the quiz game.
+
+    * This can be measured in terms of popularity and measuring the amount of user traffic that
+    visits the site.  
+
+* First Time Visitor Goals: 
+
+  * I want to be able to understand how the game works.
+
+    * When the user clicks on the quiz link in the navigation bar they are presented with a button
+    which says "start quiz", once clicked a modal appears containing a list of rules and conditions the 
+    user must follow in order to successfully complete the quiz.
+
+  * I want to be able to start playing the game quickly in as few steps as possible.
+
+    * Three clicks of a mouse is the total number of steps needed to start playing the quiz.
+
+  * I want to be able to exit the game if need's be and return to the start menu. 
+
+    *  There is no exit button built into the quiz section which allows for the user to exit
+    before completing the quiz they have to get to the end before being able to exit.
+
+  * I want to get my final score at the very end of the quiz.
+
+    * When the quiz has been completed a modal will a appear with a final score tally.  
+
+* Returning Visitor Goals:
+
+  * I want to be able to start playing the game quickly in as few steps as possible.
+
+    * Please refer back to point two under first time visitor goals.
+
+  * I would like a choice of subjects and to be able to pick a subject of my choosing.
+
+    * The quiz only comes with a list of pre-written questions from various subjects but a future 
+    Implementation could be the option to choose from a list of different subjects from the main quiz page.
+
+  * I want the gaming experience to be consistent with every use.
+
+    * The quiz follows a logical order were the user can either exit or continue after clicking the start quiz
+    button on the quiz page and if the user clicks continue they must answer the questions in the order
+    they appear and will have the option to retake the quiz of return to the main quiz page at the end.   
+
+  * I would like an option to get random questions from random subjects. 
+
+    * This feature was mention in the future inplementations section and at this stage in the websites development
+    the questions are only pre-written in the questions array and a randomiser option wasn't added to the program
+    due in part to time constraints.    
+
+### Further Testing
+
+* The two pages that make up the site were tested using Chrome Developer Tools checking for responsiveness at 
+the various different breakpoints to see how the site would react to being viewed on different devices.
+
+* The website was viewed on various different devices such as Desktop, Laptop, Google Nexus 7 tablet and my Blackview BV6000 Android phone.
+
+* Friends and family members were asked to review the site to highlight any bugs or user experience issues.
+
+### Manual Testing
+
+All throughout the development process as previously mentioned each page was consistently checked to make sure that they responded correctly to the various default breakpoints built into Chrome Developer Tools.
+
+  * The logo was clicked in each page to make sure that it was correctly linked to the home page.
+
+  * Each navigation bar link on each page was clicked to verify that it not only worked but took you to the correct page.
+
+  * The quiz game was played serveral times during the development process with only five questions to make
+  sure that the various functionality worked as expected and in the correct sequence of events. 
+
+### Lighthouse
+
+Results:
+
+* [Home Page](assets/img/Home%20Page%20Lighthouse.PNG)
+* [Quiz Page](assets/img/Quiz%20Page%20Lighthouse.PNG)
 
 ## Deployment & Local Development
 
@@ -245,8 +360,8 @@ To copy a Github repository:
 
 ### Code Used
 
-If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
-  
+* [Scrolling effect](https://css-tricks.com/books/fundamental-css-tactics/infinite-scrolling-background-image/)
+
 ###  Acknowledgments
 
 * Jubril Akolade (My stand-in mentor for Chris) - for offering guidence and support for the project from it's inception, development and deployment.
