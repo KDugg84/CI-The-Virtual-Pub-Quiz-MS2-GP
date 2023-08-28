@@ -40,7 +40,7 @@ body {
     font-size: 32px;
     color: white;
     text-decoration: none; 
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 2px;
     filter: drop-shadow(0 0 5px black);
 }
@@ -105,7 +105,7 @@ body {
 
 .welcome-content h1 {
     font-size: 60px;
-    font-weight: 700;
+    font-weight: 500;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     filter: drop-shadow(0 0 5px black);
 }
@@ -206,12 +206,12 @@ body {
 
 .answer-list .option {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     background: transparent;
     border: 2px solid rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 17px;
-    margin: 15px 0;
+    margin: 10px 0;
     cursor: pointer;
     transition: .3s;
     filter: drop-shadow(0 0 5px black);
@@ -447,29 +447,3 @@ body {
     background: red;
     color: white;
 }
-
-/* Footer styles for all pages */ 
-
-/*footer {
-    height: 200px;
-    background-color: seagreen;
-}
-
-.social-networks {
-    text-align: center;
-}
-
-.social-networks li {
-    display: inline;
-}
-
-.social-networks i {
-    font-size: 160%;
-    margin: 1%;
-    padding: 5%;
-    color: #fff;
-}
-
-.social-networks i:hover {
-    color: saddlebrown;
-}*/
