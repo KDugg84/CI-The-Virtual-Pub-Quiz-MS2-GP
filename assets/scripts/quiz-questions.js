@@ -35,57 +35,57 @@ let questions = [
     },
     {
         number: 4,
-        question: "Which model of computer is the best selling of all time?",
-        answer: "C. Commodore 64",
+        question: "How many time zones are there in Russia?",
+        answer: "C. 11",
         options: [
-            "A. Apple II",
-            "B. IBM PC (5150)",
-            "C. Commodore 64",
-            "D. Sinclair ZX Spectrum"
+            "A. 9",
+            "B. 10",
+            "C. 11",
+            "D. 12"
         ]
     },
     {
         number: 5,
-        question: "Which company developed the first mobile phone?",
-        answer: "A. Motorola",
+        question: "Whats the national flower of Japan?",
+        answer: "A. Cherry blossom",
         options: [
-            "A. Motorola",
-            "B. Nokia",
-            "C. Samsung",
-            "D. Apple",
+            "A. Cherry blossom",
+            "B. Japanese wisteria",
+            "C. Japanese camellia",
+            "D. Sakura",
         ]
     },
     {   
         number: 6,
-        question: "What year was the oldest programming language still in use invented?",
-        answer: "A. 1957",
+        question: "How many stripes are there on the US flag?",
+        answer: "A. 13",
         options: [
-            "A. 1957",
-            "B. 1952",
-            "C. 1960",
-            "D. 1974",
+            "A. 13",
+            "B. 12",
+            "C. 14",
+            "D. 11",
         ]
     },
     {   
         number: 7,
-        question: "What was the name of the first operating system?",
-        answer: "D. GM-NAA I/O",
+        question: "Whats the national animal of Australia?",
+        answer: "D. Red Kangaroo",
         options: [
-            "A. Windows 1.01",
-            "B. TSS/360",
-            "C. EPOC",
-            "D. GM-NAA I/O",
+            "A. Koala",
+            "B. Quokka",
+            "C. Dingo",
+            "D. Red Kangaroo",
         ]
     },
     {   
         number: 8,
-        question: "What is the brand Sonos famous for making?",
-        answer: "D. Speakers",
+        question: "Which of the following empires had no written language?",
+        answer: "D. Incan",
         options: [
-            "A. Games consoles",
-            "B. TV remotes",
-            "C. Screens",
-            "D. Speakers",
+            "A. Aztec",
+            "B. Egyptian",
+            "C. Roman",
+            "D. Incan",
         ]
     },
     {   
@@ -101,13 +101,13 @@ let questions = [
     },
     {   
         number: 10,
-        question: "Which institution is credited with creating the first website??",
-        answer: "C. CERN",
+        question: "Until 1923, what was the Turkish city of Istanbul called?",
+        answer: "C. Constantinople",
         options: [
-            "A. United Nations",
-            "B. NASA",
-            "C. CERN",
-            "D. NATO",
+            "A. İzmir",
+            "B. Antalya",
+            "C. Constantinople",
+            "D. Mersin",
         ]
     }
 ];
