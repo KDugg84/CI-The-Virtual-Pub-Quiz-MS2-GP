@@ -88,7 +88,7 @@ The best (intuitive) UX creates single-use learning.
 
 ### Colour Scheme
 
-I wanted the colours used for this project to reflect the interior appearance of a typical British or
+I wanted the colour scheme for this project to reflect the interior appearance of a typical British or
 Irish pub. In keeping with the theme of the pub quiz I used the following main colours:
 
 * Seagreen: rgb(46, 139, 87)
@@ -154,22 +154,18 @@ to play the game.
 to start playing the quiz.
 
 * When the user clicks on the continue button the modal displaying the game instructions which disapear to be 
-replaced by a scrolling green screen and another modal displaying the first questions.
+replaced by a scrolling green screen and another modal displaying the first question.
 
-* With each question the user has to pick one answer, a right answer will produce a white border around that question
-and a wrong answer choice will highlight that question in red. The user must choose an answer before being able 
-to continue with the quiz.
+* With each question the user can only pick one answer, a correct answer will produce a white border and a wrong answer will be highlighted in red. The user must choose an answer before being able to continue with the quiz.
 
 * Once the user has completed the quiz another modal will appear to present the user with their total score.
 
-* The final score modal inclues to buttons were the user can either press "Try Again?" to retake the quiz 
+* The final score modal inclues two buttons were the user can either press "Try Again?" to retake the quiz 
 and potenially improve their score or press "Go Home?" to return to the main quiz screen.
 
 ### Future Implementations
 
-Future implementations could involve:
-
-* Incorporating a trivia quiz API to generate the questions rather than having to manually type them out in an array file.
+* Incorporating a trivia quiz API to generate the questions rather than having to manually add them to an array file.
 
 * The option to select from a list of subjects occording to the user's preferences.
 
@@ -180,7 +176,6 @@ Future implementations could involve:
 Whilst coding the site I have ensured that the site is accesible for all. This is achieve by using:
 
 * Google Dev Tools to check contrast of items.
-* Alt tags to describe the images on site.
 * Semantic HTML.
 * Aria Labels to hightlight areas for users who require the use of a screen reader.
 
@@ -194,17 +189,17 @@ Whilst coding the site I have ensured that the site is accesible for all. This i
 
 ### Frameworks, Libraries & Programs Used
 
-[Balsamiq](https://balsamiq.com/wireframes/) was used to create the wireframes for the website.
-[Font Awesome](https://fontawesome.com/icons) was used to add the beer glass to the logo and the social media icons used in the footer.
-[Google Fonts](https://fonts.google.com/) was used to import the font for the body text.
+* [Balsamiq](https://balsamiq.com/wireframes/) was used to create the wireframes for the website.
+* [Font Awesome](https://fontawesome.com/icons) was used to add the beer glass icon to the logo.
+* [Google Fonts](https://fonts.google.com/) was used to import the font for the body text.
 Google Dev Tools was used to identify and resolve problems related to responsiveness and appearance.
-[Github](https://github.com/) was used to store my project in a repository.
-[Git](https://git-scm.com/) was used for version control.
-[Google](https://google.com) was used to research other CSS styles to add more dynamic touches to the
+* [Github](https://github.com/) was used to store my project in a repository.
+* [Git](https://git-scm.com/) was used for version control.
+* [Google](https://google.com) was used to research other CSS styles to add more dynamic touches to the
 project and help with JavaScript functionality issues/problems. 
-[Gitpod](https://www.gitpod.io/) the vast majority of my time was spent inside GitPod's VSCode Cloud IDE.
+* [Gitpod](https://www.gitpod.io/) the vast majority of my time was spent inside GitPod's VSCode Cloud IDE.
 CDNs [Cloudflare](https://www.cloudflare.com/en-gb/learning/what-is-cloudflare/) and [JsDelivr](https://www.jsdelivr.com/) were used for Font Awesome icons CSS minified and Fork Awesome minified.
-[Am I Responsive](https://ui.dev/amiresponsive) To create the responsive banner of devices.
+* [Am I Responsive](https://ui.dev/amiresponsive) To create the responsive banner of devices.
 
 ## Testing
 
@@ -220,7 +215,7 @@ The JS Lint validator throw up a few issues with my javaScript code, the two mos
 * "Use double quotes, not single quotes" when targeting CSS selector class.
 * "Use 'function (...)', not '(...) =>' when arrow functions become too complex."
 
-### Bugs and Errors
+## Bugs and Errors
 
 ### Known Issues and Fixes
 
@@ -228,7 +223,7 @@ One known issue is regarding the quiz page when viewed at smaller screen sizes, 
 but when the page is reduced in size the navigation bar is pushed out of view to the right. 
 
 One solution I tried was using the overflow: hidden; property in CSS on the body element which only mitigated
-the effect when viewed on desktop screen but I couldn't find a solution to the issue at smaller screen sizes. 
+the effect when viewed on desktop screen but I couldn't find a solution to the issue at smaller screen sizes which means that returning to the home page can only be done via clicking the logo. 
 
 ### Testing User Stories
 
@@ -241,8 +236,8 @@ the effect when viewed on desktop screen but I couldn't find a solution to the i
 
   * I want the quiz game to be fun and educational.
 
-    * The questions presented to the user cover a wide range of subject rather than just
-    sticking to one particular suject matter.
+    * The questions presented to the user cover a range of subjects rather than just
+    sticking to one particular suject.
 
   * I want the webpage/quiz game to function as it should.
 
@@ -360,7 +355,8 @@ To copy a Github repository:
 
 ### Code Used
 
-* [Scrolling effect](https://css-tricks.com/books/fundamental-css-tactics/infinite-scrolling-background-image/)
+* [Scrolling background](https://css-tricks.com/books/fundamental-css-tactics/infinite-scrolling-background-image/)
+* [Modal (Popup) tutorial](https://www.youtube.com/watch?v=XH5OW46yO8I)
 
 ###  Acknowledgments
 
