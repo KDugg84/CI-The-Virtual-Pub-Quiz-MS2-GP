@@ -6,9 +6,9 @@ The Virtual Pub Quiz is an online interactive quiz game designed to test the use
 
 The purpose of this project is to demonstrate a practical understading of how interactive front end development works in terms of DOM manipulation and to demonstate how the trinity of web development languages can interact with each other to create in this case a fun application for a lover of quiz apps.
 
-Add an image of the finished site here [amiresponsive](https://ui.dev/amiresponsive) to get an image of my site on all device sizes. 
+![AmIResponsive](assets/img/Am-I-Responsive.PNG) 
 
-Add a link to the live site here
+[View the live site here](https://kdugg84.github.io/CI-The-Virtual-Pub-Quiz-MS2-GP/index.html)
 
 ---
 
